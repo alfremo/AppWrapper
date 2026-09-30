@@ -37,6 +37,21 @@ When the original app updates, select the copy and click **Save & Rebuild**.
 
 It clones the app bundle, gives it a new bundle ID, puts your environment variables (plus a separate `HOME`) in its `Info.plist`, re-signs it and registers it with macOS. The code is in [`Sources/`](Sources).
 
+## Similar apps
+
+A couple of paid apps on the Mac App Store do the same job:
+
+| | AppWrapper | [Parall](https://apps.apple.com/us/app/parall/id6754065114?mt=12) | [Parallel Spaces: Clone Apps](https://apps.apple.com/us/app/id6772172563) |
+|---|---|---|---|
+| Price | Free | $9.99 | $4.99 |
+| Source | Open (MIT) | Closed | Closed |
+| Own Dock icon per copy | Yes | Yes | — |
+| Separate logins and data | Yes | Yes | Yes |
+| Per-copy environment variables | Yes | Launch arguments | — |
+| Text badge on the icon | Yes | Yes | — |
+
+<sub>From the US App Store listings, September 2026. "—" means the listing doesn't mention it.</sub>
+
 ## Notes
 
 - Apps that need iCloud or other special Apple permissions may not run as copies.
